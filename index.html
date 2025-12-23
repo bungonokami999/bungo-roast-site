@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bungo Roast | Cast Iron Hand-Roasted Coffee</title>
+    <style>
+        /* --- CSS STYLES --- */
+        :root {
+            --primary: #3E2723; /* Dark Coffee Bean */
+            --secondary: #D7CCC8; /* Latte Foam */
+            --accent: #A1887F; /* Light Roast */
+            --text-dark: #1a1a1a;
+            --text-light: #ffffff;
+            --font-heading: 'Georgia', serif;
+            --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-body);
+            background-color: #fafafa;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            margin-bottom: 1rem;
+        }
+
+        /* Hero Section */
+        header {
+            background-color: var(--primary);
+            color: var(--text-light);
+            text-align: center;
+            padding: 4rem 1rem;
+            /* Placeholder for a background image of coffee beans or a pan */
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1552346989-e069318e2031?q=80&w=2070&auto=format&fit=crop'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-top: 1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 12px 30px;
+            background-color: #d4a017; /* Gold/Roast color */
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #fff;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Sections */
+        .section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .intro {
+            text-align: center;
+        }
+
+        .intro h2 {
+            color: var(--primary);
+            font-size: 2.5rem;
+        }
+
+        /* Grid for Origins */
+        .origins-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .origin-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .origin-card h3 {
+            color: var(--primary);
+        }
+
+        /* Why Shade Grown */
+        .shade-grown {
+            background-color: var(--secondary);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            text-align: center;
+            font-style: italic;
+        }
+
+        .quote {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: var(--text-light);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #d4a017;
+            text-decoration: none;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BUNGO ROAST</h1>
+        <p>Small Batch. Cast Iron Roasted. Truly Artisanal.</p>
+        <a href="#contact" class="cta-button">Order Fresh Beans</a>
+    </header>
+
+    <div class="container">
+        
+        <section class="section intro">
+            <h2>The Cast Iron Difference</h2>
+            <p>At Bungo Roast, we don't use industrial machines. We roast our beans right here at home using a <strong>seasoned cast iron frying pan</strong>. This hands-on, labor-intensive method allows us to control the roast profile intimately, unlocking depth and richness you simply can't find in mass-produced coffee.</p>
+        </section>
+
+        <section class="section">
+            <h2 style="text-align: center; color: var(--primary);">Global Sourcing, Sustainable Roots</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto;">
+                We feature beans sourced from sustainable-farming-conscious farmers from all over the world. We prioritize partnerships that respect the land and the grower.
+            </p>
+            
+            <div class="origins-grid">
+                <div class="origin-card">
+                    <h3>Africa</h3>
+                    <p>Uganda & Ethiopia</p>
+                    <small>Bright, floral, and complex notes.</small>
+                </div>
+                <div class="origin-card">
+                    <h3>South America</h3>
+                    <p>Brazil & Colombia</p>
+                    <small>Classic nutty, chocolatey richness.</small>
+                </div>
+                <div class="origin-card">
+                    <h3>Central America</h3>
+                    <p>Costa Rica & El Salvador</p>
+                    <small>Balanced, sweet, and clean finishes.</small>
+                </div>
+            </div>
+        </section>
+
+        <div class="shade-grown">
+            <h2>Why We Love Shade Grown</h2>
+            <p>We definitely prefer shade-grown coffee. By growing coffee plants under a canopy of trees, the cherries ripen more slowly. This adds an incredible <strong>depth and richness to the taste</strong> that our customers notice immediately. It also supports biodiversity and bird habitats!</p>
+        </div>
+
+        <section class="section testimonials">
+            <h2>Community Love</h2>
+            <div class="quote">
+                "I can actually taste the difference the cast iron makes. It's the freshest coffee I've ever had."
+            </div>
+            <div class="quote">
+                "Knowing these beans are sustainable and shade-grown makes my morning cup taste even better."
+            </div>
+            <p>— Our Happy Neighbors & Customers</p>
+        </section>
+
+        <section id="contact" class="section intro" style="border-bottom: none;">
+            <h2>Get Your Roast</h2>
+            <p>Because we roast in small batches on cast iron, our supply is limited and exclusive.</p>
+            <p><strong>Email us to order your batch:</strong><br>
+            <a href="mailto:hello@bungoroast.com" style="font-size: 1.2rem; color: var(--primary); font-weight: bold;">hello@bungoroast.com</a></p>
+            </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Bungo Roast. Home Operated & Heart Made.</p>
+    </footer>
+
+</body>
+</html>
